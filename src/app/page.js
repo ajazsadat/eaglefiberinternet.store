@@ -10,7 +10,7 @@ export default function Home() {
   const faqs = [
     {
       q: 'Which internet providers can I find through your platform?',
-      a: `We partner with a network of licensed resellers, authorized retailers, and master-dealer distributors representing leading U.S. telecom and internet service brands. Availability and offers vary by ZIP code — call us at ${SITE.phoneDisplay} to view current plan options in your area.`,
+      a: `We're not tied to any single provider. Instead, we compare offers from multiple carriers across the U.S. and help connect you with the one that fits your needs — so you get more options in one place, and sign up directly with the provider you choose.`,
     },
     {
       q: 'How can I qualify for special promotions or discounts?',
