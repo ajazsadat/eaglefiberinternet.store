@@ -22,7 +22,7 @@ export const metadata = {
   description:
     "Eagle Fiber LLC helps you compare internet, TV, and phone plans from trusted providers. Independent comparison and enrollment assistance — not a carrier.",
   keywords:
-    "Eagle Fiber Internet, compare internet plans, fiber internet deals, cable TV, Xfinity, AT&T, Spectrum, Houston",
+    "Eagle Fiber Internet, compare internet plans, fiber internet deals, cable TV, Houston",
 };
 
 const GTM_ID = "GTM-5MGC4NF8";
