@@ -73,6 +73,13 @@ export default function XfinityPage() {
       ]}
       contentSections={providerContentSections('Xfinity')}
       faqs={providerFaqs('Xfinity')}
+      relatedHelp={{
+        title: 'Need Xfinity/Comcast support help?',
+        description:
+          'Get independent support routing — or compare new plan options. Not affiliated with Xfinity or Comcast.',
+        href: '/xfinity-support-help',
+        cta: 'Visit Xfinity Support Help',
+      }}
     />
   );
 }

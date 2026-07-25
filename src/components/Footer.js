@@ -30,6 +30,7 @@ export default function Footer() {
               {[
                 ['Home', '/'],
                 ['About Us', '/about'],
+                ['Live Agent', '/live-agent'],
                 ['Contact Us', '/contact'],
                 ['Privacy Policy', '/privacy-policy'],
                 ['Terms & Conditions', '/terms-conditions'],
