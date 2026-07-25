@@ -25,7 +25,7 @@ export default function PrivacyPage() {
           <p>
             We use information to respond to inquiries, help compare and enroll in services offered by participating
             providers, improve our website, and comply with legal obligations. We may share relevant information with
-            authorized providers, licensed agents, or master agents to facilitate enrollment when you request it.
+            participating providers or enrollment partners to facilitate signup when you request it.
           </p>
           <h2 className="font-display text-xl font-bold text-white pt-4">Calls and texts</h2>
           <p>
