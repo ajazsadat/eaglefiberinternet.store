@@ -1,6 +1,8 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { SITE } from '@/lib/site';
 import ProviderFaq from '@/components/ProviderFaq';
+import ProviderComparisonTable from '@/components/ProviderComparisonTable';
 
 export default function ProviderPage({
   name,
@@ -16,6 +18,7 @@ export default function ProviderPage({
   importantPoints = [],
   importantExtra,
   faqs = [],
+  relatedHelp,
 }) {
   const displayName = brandMark || name;
 
@@ -137,6 +140,8 @@ export default function ProviderPage({
         </section>
       )}
 
+      <ProviderComparisonTable />
+
       {/* Important information */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
         <div className="rounded-2xl border border-white/10 bg-[#121c2a] p-8 md:p-10">
@@ -172,6 +177,23 @@ export default function ProviderPage({
       </section>
 
       <ProviderFaq faqs={faqs} />
+
+      {relatedHelp && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-10 w-full">
+          <div className="rounded-2xl border border-amber-400/25 bg-[#0a1420] p-7 md:p-9 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div>
+              <h2 className="font-display text-xl md:text-2xl font-bold text-white mb-2">{relatedHelp.title}</h2>
+              <p className="text-[#a8b3c2] text-sm leading-relaxed max-w-2xl">{relatedHelp.description}</p>
+            </div>
+            <Link
+              href={relatedHelp.href}
+              className="inline-flex shrink-0 items-center justify-center px-6 py-3 rounded-full font-semibold text-[#071018] bg-gradient-to-r from-[#f0c27a] to-[#e8a84a] hover:brightness-110 transition"
+            >
+              {relatedHelp.cta || 'Get help'}
+            </Link>
+          </div>
+        </section>
+      )}
 
       <section className="pb-16 px-4 text-center">
         <a
