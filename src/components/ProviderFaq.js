@@ -2,7 +2,7 @@
 import { useState } from 'react';
 
 export default function ProviderFaq({ faqs }) {
-  const [openFaq, setOpenFaq] = useState(null);
+  const [openFaq, setOpenFaq] = useState(0);
 
   if (!faqs?.length) return null;
 
