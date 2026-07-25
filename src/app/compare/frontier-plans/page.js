@@ -56,7 +56,7 @@ export default function FrontierPage() {
         ...providerContentSections('Frontier'),
         {
           title: 'Fiber Expansion Markets',
-          body: 'Frontier continues to expand fiber in select regions. Availability is address-specific — call Eagle Fiber to check whether Frontier fiber or legacy options serve your location.',
+          body: 'Frontier continues to expand fiber in select regions. Availability is address-specific — call Eagle Fiber and we’ll help you compare which Frontier plan options may be listed for your address.',
         },
       ]}
       faqs={providerFaqs('Frontier')}

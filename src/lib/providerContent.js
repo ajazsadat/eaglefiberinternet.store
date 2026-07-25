@@ -29,7 +29,7 @@ export function providerFaqs(name) {
     },
     {
       q: `How to contact ${name} customer service`,
-      a: `While we don’t handle ${name} accounts ourselves, we can guide you on how to reach ${name} customer support and help you understand what services are available in your area.`,
+      a: `While we don’t handle ${name} accounts ourselves, for billing, technical support, or service issues, please contact ${name} through their official customer service channels — you can find their current contact number and support options on ${name}’s official website or on your ${name} bill.`,
     },
   ];
 }
