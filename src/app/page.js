@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { SITE } from '@/lib/site';
 
 export default function Home() {
-  const [openFaq, setOpenFaq] = useState(null);
+  const [openFaq, setOpenFaq] = useState(0);
 
   const faqs = [
     {
