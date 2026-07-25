@@ -10,19 +10,19 @@ export default function Home() {
   const faqs = [
     {
       q: 'Which internet providers can I find through your platform?',
-      a: `We partner with a network of licensed resellers, authorized retailers, and master-dealer distributors representing leading U.S. telecom and internet service brands. Availability and offers vary by ZIP code — call us at ${SITE.phoneDisplay} to view current plan options in your area.`,
+      a: `Eagle Fiber LLC is an independent marketing partner that helps you compare and connect with broadband, cable, and wireless providers.. Availability and offers vary by ZIP code — call us at ${SITE.phoneDisplay} to view current plan options in your area.`,
     },
     {
       q: 'How can I qualify for special promotions or discounts?',
       a: 'Promotional eligibility is determined by each provider’s individual policies, location, and credit requirements. During your free consultation, our representatives will outline available promotions, qualifying terms, and applicable timelines — with absolutely no purchase obligation.',
     },
     {
-      q: 'What does it mean to be an “authorized reseller” or “partner network”?',
-      a: 'We are not the direct provider of internet, wireless, or cable services. Instead, we operate as an authorized reseller and licensed retailer for multiple carrier and service networks across the U.S. This means we’re approved to market, compare, and facilitate service orders through official partner and master-dealer programs — giving customers access to more plan options in one place.',
+      q: 'Are you an internet, cable, or wireless provider”?',
+      a: 'No — we're not a direct provider of internet, wireless, or cable services. We're an independent comparison and referral service. We help you explore and compare plans from multiple carriers across the U.S., and connect you directly with the provider you choose — giving you access to more options in one place, without being tied to any single carrier.',
     },
     {
       q: 'Are there any installation or equipment costs?',
-      a: 'Any setup, equipment, or activation fees are determined by the selected provider and plan type. Before you proceed with any order, our team will clearly present all related costs, fees, and requirements as outlined by the provider.',
+      a: 'Once you confirm your selection, we help coordinate the process with your chosen provider. Installation timelines vary by provider, location, and technician availability — your provider will confirm the exact schedule once your order is placed.',
     },
     {
       q: 'How is installation arranged once I select a plan?',
