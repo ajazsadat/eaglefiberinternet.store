@@ -2,6 +2,8 @@ import { SITE } from '@/lib/site';
 
 /** Shared FAQs adapted from the WordPress Xfinity plans page, with provider-specific customer-service Q. */
 export function providerFaqs(name) {
+  return [
+    {
       q: `Is ${SITE.brandFull} an internet service provider?`,
       a: `No — we’re not a direct provider of internet, wireless, or cable services. We’re an independent comparison and referral service. We help you explore and compare plans from multiple carriers across the U.S., and connect you directly with the provider you choose — giving you access to more options in one place, without being tied to any single carrier.`,
     },
