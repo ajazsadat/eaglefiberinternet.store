@@ -10,15 +10,15 @@ export default function Home() {
   const faqs = [
     {
       q: 'Which internet providers can I find through your platform?',
-      a: `We partner with a network of licensed resellers, authorized retailers, and master-dealer distributors representing leading U.S. telecom and internet service brands. Availability and offers vary by ZIP code — call us at ${SITE.phoneDisplay} to view current plan options in your area.`,
+      a: `We help you explore and compare plans from multiple leading U.S. telecom and internet service brands. Availability and offers vary by ZIP code — call us at ${SITE.phoneDisplay} to view current plan options in your area.`,
     },
     {
       q: 'How can I qualify for special promotions or discounts?',
       a: 'Promotional eligibility is determined by each provider’s individual policies, location, and credit requirements. During your free consultation, our representatives will outline available promotions, qualifying terms, and applicable timelines — with absolutely no purchase obligation.',
     },
     {
-      q: 'What does it mean to be an “authorized reseller” or “partner network”?',
-      a: 'We are not the direct provider of internet, wireless, or cable services. Instead, we operate as an authorized reseller and licensed retailer for multiple carrier and service networks across the U.S. This means we’re approved to market, compare, and facilitate service orders through official partner and master-dealer programs — giving customers access to more plan options in one place.',
+      q: 'Are you an internet, cable, or wireless provider?',
+      a: 'No — we’re not a direct provider of internet, wireless, or cable services. We’re an independent comparison and referral service. We help you explore and compare plans from multiple carriers across the U.S., and connect you directly with the provider you choose — giving you access to more options in one place, without being tied to any single carrier.',
     },
     {
       q: 'Are there any installation or equipment costs?',
@@ -26,7 +26,7 @@ export default function Home() {
     },
     {
       q: 'How is installation arranged once I select a plan?',
-      a: 'Once you confirm your selection, our team coordinates the process with your chosen provider’s certified installation partner. Most installations are completed within 24–48 hours, depending on technician availability and local scheduling.',
+      a: 'Once you confirm your selection, we help coordinate the process with your chosen provider. Installation timelines vary by provider, location, and technician availability — your provider will confirm the exact schedule once your order is placed.',
     },
     {
       q: 'Who should I contact for support after installation?',
@@ -45,7 +45,7 @@ export default function Home() {
     },
     {
       title: 'Wireless Services',
-      body: 'Find the latest phone plans and devices with competitive trade-in and port-in offers from authorized network partners.',
+      body: 'Find the latest phone plans and devices with competitive trade-in and port-in offers from participating network providers.',
     },
     {
       title: 'Home & Business Phone',
@@ -72,7 +72,7 @@ export default function Home() {
     },
     {
       title: 'Secure Process',
-      body: 'Orders are placed through verified, provider-authorized systems.',
+      body: 'Orders are placed through verified provider enrollment channels.',
     },
     {
       title: 'Nationwide Coverage',
@@ -150,13 +150,13 @@ export default function Home() {
           <div>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-5">Who we are</h2>
             <p className="text-[#a8b3c2] text-lg leading-relaxed mb-4">
-              {SITE.legalName} (d/b/a {SITE.domain}) is an independent, authorized reseller that works with multiple
-              leading broadband, cable, and wireless providers. We don’t favor any carrier — our recommendations are
-              based on your location, your needs, and your budget.
+              {SITE.legalName} (d/b/a {SITE.domain}) is an independent comparison and referral service that helps you
+              explore plans from multiple leading broadband, cable, and wireless providers. We don’t favor any carrier —
+              our recommendations are based on your location, your needs, and your budget.
             </p>
             <p className="text-[#a8b3c2] leading-relaxed mb-8">
               We are not an internet service provider and do not own or operate network infrastructure. All services are
-              fulfilled and billed directly by licensed carriers.
+              fulfilled and billed directly by the carriers you choose.
             </p>
             <Link
               href="/about"
@@ -170,7 +170,7 @@ export default function Home() {
               Compare trusted providers. Choose what fits you best.
             </h3>
             <p className="text-[#a8b3c2] leading-relaxed mb-7">
-              We help you compare plans and get connected through licensed service providers easily and transparently.
+              We help you compare plans and get connected with the service provider you choose — easily and transparently.
             </p>
             <a
               href={`tel:${SITE.phoneTel}`}
@@ -241,7 +241,7 @@ export default function Home() {
               {
                 step: '03',
                 title: 'Choose & activate',
-                body: 'We help coordinate setup directly with the licensed provider you select.',
+                body: 'We help coordinate setup directly with the provider you select.',
               },
               {
                 step: '04',
@@ -302,8 +302,8 @@ export default function Home() {
           <p className="text-[#c5ced9] text-lg leading-relaxed">
             {SITE.legalName} (d/b/a {SITE.domain}) offers a convenient platform to explore high-speed internet, cable TV,
             home phone, wireless, and home security options — with availability checks, upfront pricing guidance, and
-            easy installation coordination as an independent, authorized retailer and licensed reseller for leading U.S.
-            telecom and home service providers.
+            installation coordination help as an independent comparison and referral service for leading U.S. telecom and
+            home service providers.
           </p>
           <Link
             href="/about"

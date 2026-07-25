@@ -3,7 +3,7 @@ import { SITE } from '@/lib/site';
 
 export const metadata = {
   title: `About Us | ${SITE.brandFull}`,
-  description: `Learn how ${SITE.legalName} helps you compare and enroll in internet and TV plans as an independent authorized partner.`,
+  description: `Learn how ${SITE.legalName} helps you compare internet and TV plans as an independent comparison and referral service.`,
 };
 
 export default function AboutPage() {
@@ -35,9 +35,9 @@ export default function AboutPage() {
         <div>
           <h2 className="font-display text-2xl font-bold text-white mb-4">Who we are</h2>
           <p className="text-[#a8b3c2] leading-relaxed">
-            {SITE.brandFull} operates under authorized reseller arrangements with licensed national master agents,
-            including DSI Systems and PerfectVision. Our role is limited to informational support, helping customers
-            compare available internet and bundled options, and assisting with enrollment.
+            {SITE.brandFull} is an independent comparison and referral service. Our role is limited to informational
+            support, helping customers compare available internet and bundled options, and assisting with enrollment by
+            connecting you with the provider you choose.
           </p>
           <p className="text-[#a8b3c2] leading-relaxed mt-4">
             Network performance, installation, billing, account management, and ongoing support are provided and managed
@@ -58,31 +58,31 @@ export default function AboutPage() {
             </li>
             <li className="flex gap-3">
               <span className="text-amber-400 font-bold">03</span>
-              <span>Upon request, facilitate enrollment by connecting you with an authorized provider or licensed agent.</span>
+              <span>Upon request, help connect you with the provider you choose so you can complete enrollment.</span>
             </li>
             <li className="flex gap-3">
               <span className="text-amber-400 font-bold">04</span>
-              <span>Operate through authorized reseller arrangements with licensed national master agents.</span>
+              <span>Share clear, side-by-side plan information so you can decide without being tied to a single carrier.</span>
             </li>
           </ul>
         </div>
 
         <div>
-          <h2 className="font-display text-2xl font-bold text-white mb-4">Reseller disclosure</h2>
+          <h2 className="font-display text-2xl font-bold text-white mb-4">How we operate</h2>
           <p className="text-[#a8b3c2] leading-relaxed">
-            {SITE.legalName} (operating as {SITE.domain}) is an independent authorized sales partner and reseller helping
-            customers nationwide compare and activate broadband, wireless, and digital services. We are not owned or
-            controlled by any specific ISP. Services are provided, billed, and maintained by the respective carriers. We
-            may receive a commission for connections — at no extra cost to you.
+            {SITE.legalName} (operating as {SITE.domain}) is an independent comparison and referral service helping
+            customers nationwide explore broadband, wireless, and digital service options. We are not owned or controlled
+            by any specific ISP. Services are provided, billed, and maintained by the respective carriers. We may receive
+            a commission for connections — at no extra cost to you.
           </p>
         </div>
 
         <div className="rounded-2xl border border-white/10 bg-[#121c2a] p-8">
           <h2 className="font-display text-2xl font-bold text-white mb-4">Our commitment to transparency</h2>
           <p className="text-[#a8b3c2] leading-relaxed mb-4">
-            We operate solely as an independent authorized agent and enrollment assistance provider. We do not represent
-            ourselves as Spectrum, Xfinity, Verizon, AT&T, or any other carrier. We do not own, operate, install, or manage
-            any networks.
+            We operate solely as an independent comparison and referral service. We do not represent ourselves as
+            Spectrum, Xfinity, Verizon, AT&T, or any other carrier. We do not own, operate, install, or manage any
+            networks.
           </p>
           <p className="text-[#a8b3c2] leading-relaxed">
             All brand names and logos referenced here belong to their respective owners and are used for identification
