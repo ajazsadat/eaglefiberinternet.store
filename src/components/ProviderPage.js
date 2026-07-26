@@ -20,6 +20,7 @@ export default function ProviderPage({
   faqs = [],
   relatedHelp,
   showTopCtas = false,
+  liveAgentHref = '/live-agent',
 }) {
   const displayName = brandMark || name;
 
@@ -41,7 +42,7 @@ export default function ProviderPage({
         <section className="border-b border-white/5 bg-[#0a1420]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-center">
             <Link
-              href="/live-agent"
+              href={liveAgentHref}
               className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full font-semibold text-[#071018] bg-gradient-to-r from-[#f0c27a] to-[#e8a84a] hover:brightness-110 transition"
             >
               <svg className="w-5 h-5 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
