@@ -73,6 +73,7 @@ export default function XfinityPage() {
       ]}
       contentSections={providerContentSections('Xfinity')}
       faqs={providerFaqs('Xfinity')}
+      showTopCtas
       relatedHelp={{
         title: 'Need Xfinity/Comcast support help?',
         description:
