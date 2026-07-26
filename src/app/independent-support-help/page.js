@@ -2,9 +2,9 @@ import Link from 'next/link';
 import { SITE } from '@/lib/site';
 
 export const metadata = {
-  title: 'Xfinity/Comcast Help & Plan Comparison | Eagle Fiber Internet',
+  title: 'Independent Support Help & Plan Comparison | Eagle Fiber Internet',
   description:
-    'Independent support-routing and plan comparison for Xfinity/Comcast customers. Not affiliated with Xfinity. Compare options or get pointed to the right resource.',
+    'Independent support-routing and plan comparison help. Not affiliated with any carrier. Get pointed to the right resource or compare new plan options.',
 };
 
 const helpItems = [
@@ -13,16 +13,17 @@ const helpItems = [
   'Answering general questions about service options in your area',
 ];
 
-export default function XfinitySupportHelpPage() {
+export default function IndependentSupportHelpPage() {
   return (
     <div className="bg-[#071018] min-h-screen">
       <section className="border-b border-white/5 bg-[#0a1420]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14">
           <h1 className="font-display text-3xl md:text-5xl font-extrabold text-white tracking-tight mb-3">
-            Xfinity/Comcast Help — Independent Support Service
+            Independent Support Help
           </h1>
           <p className="text-sm md:text-base text-amber-300/90 leading-relaxed max-w-3xl">
-            Not affiliated with, endorsed by, or connected to Xfinity, Comcast, or Comcast Cable Communications, LLC.
+            Not affiliated with, endorsed by, or connected to Xfinity, Comcast, or Comcast Cable Communications, LLC —
+            or any other internet provider.
           </p>
         </div>
       </section>
@@ -31,7 +32,7 @@ export default function XfinitySupportHelpPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-transparent" />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-5 leading-tight">
-            Need help with your Xfinity or Comcast service?
+            Need help with your home internet or cable service?
           </h2>
           <p className="text-lg text-[#b8c3d1] leading-relaxed max-w-2xl mb-8">
             We&apos;re an independent support-routing and comparison service — real people, fast answers, no bots. We can
@@ -66,9 +67,9 @@ export default function XfinitySupportHelpPage() {
           <div className="rounded-2xl border border-amber-400/25 bg-[#121c2a] p-7 md:p-9">
             <h2 className="font-display text-xl font-bold text-white mb-3">Important disclosure</h2>
             <p className="text-[#a8b3c2] leading-relaxed mb-6">
-              {SITE.legalName} is an independent service. We are not Xfinity, Comcast, or any Xfinity/Comcast affiliate,
-              and we do not have access to your Xfinity account. For account-specific support, billing, or outage
-              reporting, please contact Xfinity directly through their official channels.
+              {SITE.legalName} is an independent service. We are not Xfinity, Comcast, or any carrier affiliate, and we
+              do not have access to provider accounts. For account-specific support, billing, or outage reporting,
+              please contact your provider directly through their official channels.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a
@@ -91,7 +92,7 @@ export default function XfinitySupportHelpPage() {
       <section className="py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-[#7a8796] leading-relaxed">
           <p>
-            Xfinity, Comcast, and related marks are trademarks of their respective owners and are used here for
+            Provider names and related marks are trademarks of their respective owners and are used here for
             identification and comparison only.
           </p>
         </div>
