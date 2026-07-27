@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { SITE, PROVIDERS } from '@/lib/site';
+import { hidesChromeOnMobile } from '@/lib/mobileChrome';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,6 +12,8 @@ export default function Header() {
   const pathname = usePathname() || '';
   const [mounted, setMounted] = useState(false);
   const dropdownRef = useRef(null);
+  const hideOnMobile = hidesChromeOnMobile(pathname);
+  const chromeClass = hideOnMobile ? 'hidden md:block' : '';
 
   useEffect(() => {
     setMounted(true);
@@ -45,17 +48,17 @@ export default function Header() {
 
   if (!mounted) {
     return (
-      <>
+      <div className={chromeClass}>
         {disclaimer}
         <div className="sticky top-0 w-full z-50 bg-[#071018]/90 backdrop-blur-md border-b border-white/5">
           <div className="h-20" />
         </div>
-      </>
+      </div>
     );
   }
 
   return (
-    <>
+    <div className={chromeClass}>
       {disclaimer}
       <header className="sticky top-0 w-full z-50 bg-[#071018]/90 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -182,6 +185,6 @@ export default function Header() {
           </div>
         )}
       </header>
-    </>
+    </div>
   );
 }

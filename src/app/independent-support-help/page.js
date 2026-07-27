@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { SITE } from '@/lib/site';
+import MobilePageLogo from '@/components/MobilePageLogo';
 
 export const metadata = {
   title: 'Independent Support Help & Plan Comparison | Eagle Fiber Internet',
@@ -97,6 +98,8 @@ export default function IndependentSupportHelpPage() {
           </p>
         </div>
       </section>
+
+      <MobilePageLogo />
     </div>
   );
 }
