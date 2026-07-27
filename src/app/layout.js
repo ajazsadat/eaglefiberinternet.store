@@ -24,7 +24,7 @@ export const metadata = {
     "Eagle Fiber Internet, compare internet plans, fiber internet deals, cable TV, Houston",
 };
 
-const GTM_ID = "GTM-5MGC4NF8";
+const GTM_ID = "GTM-KHLVZDJF";
 
 export default function RootLayout({ children }) {
   return (
