@@ -1,10 +1,21 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { SITE } from '@/lib/site';
+import { hidesChromeOnMobile } from '@/lib/mobileChrome';
 
 export default function Footer() {
+  const pathname = usePathname() || '';
+  const hideOnMobile = hidesChromeOnMobile(pathname);
+
   return (
-    <footer className="bg-[#050b12] border-t border-white/10 pt-14 pb-8">
+    <footer
+      className={`bg-[#050b12] border-t border-white/10 pt-14 pb-8${
+        hideOnMobile ? ' hidden md:block' : ''
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>

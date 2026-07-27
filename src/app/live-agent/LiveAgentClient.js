@@ -1,6 +1,7 @@
 'use client';
 
 import { SITE } from '@/lib/site';
+import MobilePageLogo from '@/components/MobilePageLogo';
 
 function openTawkChat() {
   if (typeof window === 'undefined') return;
@@ -80,6 +81,8 @@ export default function LiveAgentClient() {
           </p>
         </div>
       </section>
+
+      <MobilePageLogo />
     </div>
   );
 }
