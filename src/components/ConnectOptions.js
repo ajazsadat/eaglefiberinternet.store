@@ -46,21 +46,27 @@ export default function ConnectOptions() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-8">
         <a
           href={`tel:${SITE.phoneTel}`}
-          className="flex flex-col items-center justify-center gap-5 rounded-2xl border border-white/10 bg-[#121c2a] px-6 py-12 md:py-16 text-center hover:border-amber-400/50 hover:bg-[#152033] transition"
+          className="flex flex-col items-center justify-center gap-4 rounded-2xl border border-white/10 bg-[#121c2a] px-6 py-12 md:py-16 text-center hover:border-amber-400/50 hover:bg-[#152033] transition"
         >
           <HumanAgentIcon />
           <span className="font-display text-xl md:text-2xl font-bold text-white">
             Speak With A Human Agent
           </span>
+          <span className="text-lg md:text-xl font-semibold text-amber-300 tracking-wide">
+            {SITE.phoneDisplay}
+          </span>
         </a>
 
         <a
           href={`tel:${SITE.phoneTel}`}
-          className="flex flex-col items-center justify-center gap-5 rounded-2xl border border-white/10 bg-[#121c2a] px-6 py-12 md:py-16 text-center hover:border-amber-400/50 hover:bg-[#152033] transition"
+          className="flex flex-col items-center justify-center gap-4 rounded-2xl border border-white/10 bg-[#121c2a] px-6 py-12 md:py-16 text-center hover:border-amber-400/50 hover:bg-[#152033] transition"
         >
           <AutomatedLineIcon />
           <span className="font-display text-xl md:text-2xl font-bold text-white">
             Automated Support Line
+          </span>
+          <span className="text-lg md:text-xl font-semibold text-amber-300 tracking-wide">
+            {SITE.phoneDisplay}
           </span>
         </a>
       </div>
