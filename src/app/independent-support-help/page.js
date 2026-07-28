@@ -18,7 +18,7 @@ function PhoneIcon() {
   );
 }
 
-const phoneDisplay = SITE.phoneTel.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
+const phoneDisplay = SITE.phoneDisplay;
 
 export default function IndependentSupportHelpPage() {
   return (
