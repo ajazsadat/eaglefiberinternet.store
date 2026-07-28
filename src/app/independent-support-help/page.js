@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { SITE } from '@/lib/site';
 import MobilePageLogo from '@/components/MobilePageLogo';
+import ConnectOptions from '@/components/ConnectOptions';
 
 export const metadata = {
   title: 'Independent Support Help & Plan Comparison | Eagle Fiber Internet',
@@ -33,20 +34,17 @@ export default function IndependentSupportHelpPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-transparent" />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-5 leading-tight">
-            Need help with your home internet or cable service?
+            How would you like to connect for internet services and assistance?
           </h2>
-          <p className="text-lg text-[#b8c3d1] leading-relaxed max-w-2xl mb-8">
-            We&apos;re an independent support-routing and comparison service — real people, fast answers, no bots. We can
-            help you get connected with the right resource, whether that&apos;s your provider&apos;s official support line or
-            comparing new plan options.
+          <p className="text-lg text-[#b8c3d1] leading-relaxed max-w-2xl">
+            We&apos;re an independent support-routing and comparison service. Choose a human agent or our automated
+            support line to get connected with the right resource.
           </p>
-          <a
-            href={`tel:${SITE.phoneTel}`}
-            className="inline-flex items-center justify-center px-8 py-4 rounded-full font-bold text-[#071018] bg-gradient-to-r from-[#f0c27a] to-[#e8a84a] hover:brightness-110 transition shadow-[0_0_24px_rgba(232,168,74,0.3)]"
-          >
-            Call {SITE.phoneDisplay}
-          </a>
         </div>
+      </section>
+
+      <section className="py-16 md:py-20 border-b border-white/5">
+        <ConnectOptions />
       </section>
 
       <section className="py-16 border-b border-white/5">
