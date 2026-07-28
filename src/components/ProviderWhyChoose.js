@@ -17,9 +17,10 @@ export default function ProviderWhyChoose({ providerName }) {
               Why Choose {SITE.brandFull}?
             </h2>
             <p className="text-[#a8b3c2] leading-relaxed mb-8 max-w-xl">
-              Getting {name} services is easier with {SITE.brand}. We help you compare plans, understand features and
-              pricing, and select the option that works best for your home or business. Our team guides you every step
-              of the way — clear, reliable, and hassle-free.
+              Call to get assistance to compare providers. Getting {name} Internet & Cable Services is easier with{' '}
+              {SITE.brand} — we help you compare plans, understand features and pricing, and select the option that
+              works best for your home or business. Our team guides you every step of the way — clear, reliable, and
+              hassle-free.
             </p>
 
             <a

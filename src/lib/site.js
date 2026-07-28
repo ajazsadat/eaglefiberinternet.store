@@ -4,7 +4,7 @@ export const SITE = {
   legalName: "Eagle Fiber LLC",
   domain: "eaglefiberinternet.store",
   phoneDisplay: "(888) 908-7350",
-  phoneTel: "8889087350",
+  phoneTel: "(888) 908-7350",
   email: "info@eaglefiberinternet.store",
   addressLine1: "1550 Gessner Rd # 114",
   addressLine2: "Houston, TX 77080",
