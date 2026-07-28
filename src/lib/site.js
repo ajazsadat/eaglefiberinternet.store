@@ -18,11 +18,11 @@ export const SITE = {
 };
 
 export const PROVIDERS = [
-  { name: "Xfinity", href: "/compare/xfinity-plans" },
-  { name: "AT&T Fiber", href: "/compare/att-plans" },
-  { name: "Spectrum", href: "/compare/spectrum-plans" },
-  { name: "Frontier", href: "/compare/frontier-plans" },
-  { name: "Windstream", href: "/compare/windstream-plans" },
+  { name: "Xfinity", href: "/xfinity-plans" },
+  { name: "AT&T Fiber", href: "/att-plans" },
+  { name: "Spectrum", href: "/spectrum-plans" },
+  { name: "Frontier", href: "/frontier-plans" },
+  { name: "Windstream", href: "/windstream-plans" },
 ];
 
 export const PROVIDER_NAMES_LIST =
