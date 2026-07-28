@@ -92,7 +92,7 @@ export default function Header() {
                 <button
                   onClick={() => setIsProvidersOpen(!isProvidersOpen)}
                   className={`text-sm font-medium transition-colors hover:text-amber-300 flex items-center ${
-                    pathname.includes('/compare') ? 'text-amber-300' : 'text-[#c5ced9]'
+                    PROVIDERS.some((p) => pathname.startsWith(p.href)) ? 'text-amber-300' : 'text-[#c5ced9]'
                   }`}
                 >
                   Providers
