@@ -1,11 +1,11 @@
-import LiveAgentClient from './LiveAgentClient';
+import LiveAgentPage from '@/components/LiveAgentPage';
 
 export const metadata = {
   title: 'Live Agent Help | Eagle Fiber Internet',
   description:
-    'Connect with Eagle Fiber by phone — speak with a human agent or use the automated support line for independent internet plan comparison and assistance. Not affiliated with any carrier.',
+    'Connect with Eagle Fiber — speak with a human agent or use the automated support line for independent internet plan comparison and assistance.',
 };
 
 export default function Page() {
-  return <LiveAgentClient />;
+  return <LiveAgentPage />;
 }
