@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { SITE } from '@/lib/site';
+import HomeGetStartedForm from '@/components/HomeGetStartedForm';
 
 export default function Home() {
   const [openFaq, setOpenFaq] = useState(0);
@@ -341,23 +342,82 @@ export default function Home() {
       </section>
 
       {/* Get started */}
-      <section className="pb-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl border border-amber-400/20 bg-gradient-to-br from-[#1a2434] to-[#121c2a] p-10 md:p-14 text-center">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">Get started</h2>
-            <p className="text-[#a8b3c2] text-lg max-w-2xl mx-auto leading-relaxed mb-8">
-              Call {SITE.phoneDisplay} or request a free, no-obligation quote to see available options in your area. Our
-              experts will walk you through plans, pricing, and promotions — so you can upgrade with confidence.
-            </p>
-            <a
-              href={`tel:${SITE.phoneTel}`}
-              className="inline-flex items-center justify-center px-8 py-4 rounded-full font-bold text-[#071018] bg-gradient-to-r from-[#f0c27a] to-[#e8a84a] hover:brightness-110 transition shadow-[0_0_24px_rgba(232,168,74,0.3)]"
-            >
-              Call {SITE.phoneDisplay}
-            </a>
-            <p className="mt-6 text-sm text-[#7a8796]">
-              {SITE.email} · {SITE.addressLine1}, {SITE.addressLine2}
-            </p>
+      <section className="border-t border-white/10 bg-[#0a1420]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+            <div>
+              <h2 className="font-display text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-4">
+                Get Started
+              </h2>
+              <p className="text-[#a8b3c2] leading-relaxed mb-3 max-w-xl">
+                Call {SITE.phoneDisplay} or request a free, no-obligation quote to see available options in your area.
+              </p>
+              <p className="text-[#a8b3c2] leading-relaxed mb-8 max-w-xl">
+                Our experts will walk you through plans, pricing, and promotions — so you can upgrade with confidence.
+              </p>
+
+              <ul className="space-y-4 text-[#c5ced9]">
+                <li>
+                  <a
+                    href={`tel:${SITE.phoneTel}`}
+                    className="inline-flex items-center gap-3 hover:text-amber-300 transition"
+                  >
+                    <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-amber-400/10 text-amber-300 border border-amber-400/25">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                        />
+                      </svg>
+                    </span>
+                    <span className="font-semibold text-lg">{SITE.phoneDisplay}</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={`mailto:${SITE.email}`}
+                    className="inline-flex items-center gap-3 hover:text-amber-300 transition"
+                  >
+                    <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-amber-400/10 text-amber-300 border border-amber-400/25">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                        />
+                      </svg>
+                    </span>
+                    <span>{SITE.email}</span>
+                  </a>
+                </li>
+                <li className="inline-flex items-start gap-3">
+                  <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-amber-400/10 text-amber-300 border border-amber-400/25">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </span>
+                  <span className="leading-relaxed pt-1.5">
+                    {SITE.addressLine1}
+                    <br />
+                    {SITE.addressLine2}
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-[#121c2a] p-7 md:p-9">
+              <h3 className="font-display text-2xl font-bold text-white mb-2">Get Started</h3>
+              <p className="text-[#a8b3c2] text-sm mb-6 leading-relaxed">
+                Share a few details and we&apos;ll help you compare options available near you.
+              </p>
+              <HomeGetStartedForm />
+            </div>
           </div>
         </div>
       </section>
