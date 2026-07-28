@@ -79,7 +79,6 @@ export default function IndependentSupportHelpPage() {
             height={120}
             className={styles.brandLogoImg}
           />
-          <span className={styles.brandLogoText}>{SITE.brand}</span>
         </Link>
       </div>
     </div>
