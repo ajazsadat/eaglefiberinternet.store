@@ -31,6 +31,22 @@ function AutomatedLineIcon() {
   );
 }
 
+function PhoneButton() {
+  return (
+    <span className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full font-bold text-[#071018] bg-gradient-to-r from-[#f0c27a] to-[#e8a84a] group-hover:brightness-110 transition shadow-[0_0_20px_rgba(232,168,74,0.25)]">
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+        />
+      </svg>
+      {SITE.phoneDisplay}
+    </span>
+  );
+}
+
 /**
  * Minimal two-option connect UI (headline + two tel cards),
  * matching the simplyactivateservices live-agent pattern.
@@ -46,28 +62,24 @@ export default function ConnectOptions() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-8">
         <a
           href={`tel:${SITE.phoneTel}`}
-          className="flex flex-col items-center justify-center gap-4 rounded-2xl border border-white/10 bg-[#121c2a] px-6 py-12 md:py-16 text-center hover:border-amber-400/50 hover:bg-[#152033] transition"
+          className="group flex flex-col items-center justify-center gap-5 rounded-2xl border border-white/10 bg-[#121c2a] px-6 py-12 md:py-16 text-center hover:border-amber-400/50 hover:bg-[#152033] transition"
         >
           <HumanAgentIcon />
           <span className="font-display text-xl md:text-2xl font-bold text-white">
             Speak With A Human Agent
           </span>
-          <span className="text-lg md:text-xl font-semibold text-amber-300 tracking-wide">
-            {SITE.phoneDisplay}
-          </span>
+          <PhoneButton />
         </a>
 
         <a
           href={`tel:${SITE.phoneTel}`}
-          className="flex flex-col items-center justify-center gap-4 rounded-2xl border border-white/10 bg-[#121c2a] px-6 py-12 md:py-16 text-center hover:border-amber-400/50 hover:bg-[#152033] transition"
+          className="group flex flex-col items-center justify-center gap-5 rounded-2xl border border-white/10 bg-[#121c2a] px-6 py-12 md:py-16 text-center hover:border-amber-400/50 hover:bg-[#152033] transition"
         >
           <AutomatedLineIcon />
           <span className="font-display text-xl md:text-2xl font-bold text-white">
             Automated Support Line
           </span>
-          <span className="text-lg md:text-xl font-semibold text-amber-300 tracking-wide">
-            {SITE.phoneDisplay}
-          </span>
+          <PhoneButton />
         </a>
       </div>
     </div>
