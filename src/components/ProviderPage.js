@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { SITE } from '@/lib/site';
 import ProviderFaq from '@/components/ProviderFaq';
 import ProviderComparisonTable from '@/components/ProviderComparisonTable';
+import ProviderWhyChoose from '@/components/ProviderWhyChoose';
 
 export default function ProviderPage({
   name,
@@ -230,14 +231,7 @@ export default function ProviderPage({
         </section>
       )}
 
-      <section className="pb-16 px-4 text-center">
-        <a
-          href={`tel:${SITE.phoneTel}`}
-          className="inline-flex items-center justify-center px-8 py-4 rounded-full font-bold text-[#071018] bg-gradient-to-r from-[#f0c27a] to-[#e8a84a] hover:brightness-110 transition shadow-[0_0_24px_rgba(232,168,74,0.3)]"
-        >
-          Call Now: {SITE.phoneDisplay}
-        </a>
-      </section>
+      <ProviderWhyChoose providerName={displayName} />
     </div>
   );
 }
