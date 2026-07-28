@@ -1,9 +1,14 @@
-/** Routes that hide site header/footer on mobile and show a centered logo instead. */
-export const MOBILE_CHROME_HIDDEN_PATHS = [
+/** Routes that hide the site header and footer entirely. */
+export const CHROME_HIDDEN_PATHS = [
   '/live-agent',
   '/independent-support-help',
 ];
 
+export function hidesChrome(pathname) {
+  return CHROME_HIDDEN_PATHS.includes(pathname || '');
+}
+
+/** @deprecated Use hidesChrome — kept for any older imports */
 export function hidesChromeOnMobile(pathname) {
-  return MOBILE_CHROME_HIDDEN_PATHS.includes(pathname || '');
+  return hidesChrome(pathname);
 }

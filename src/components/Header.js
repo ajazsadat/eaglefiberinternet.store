@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { SITE, PROVIDERS } from '@/lib/site';
-import { hidesChromeOnMobile } from '@/lib/mobileChrome';
+import { hidesChrome } from '@/lib/mobileChrome';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,8 +12,7 @@ export default function Header() {
   const pathname = usePathname() || '';
   const [mounted, setMounted] = useState(false);
   const dropdownRef = useRef(null);
-  const hideOnMobile = hidesChromeOnMobile(pathname);
-  const chromeClass = hideOnMobile ? 'hidden md:block' : '';
+  const chromeClass = hidesChrome(pathname) ? 'hidden' : '';
 
   useEffect(() => {
     setMounted(true);
