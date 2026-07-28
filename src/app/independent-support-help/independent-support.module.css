@@ -1,0 +1,275 @@
+.page {
+  --ish-purple: #5a23b9;
+  --ish-purple-deep: #1d096c;
+  --ish-purple-bright: #8c52f6;
+  --ish-purple-border: #5c11cf;
+  --ish-phone: #6713db;
+  min-height: 70vh;
+  background-color: #e8e2f6;
+  background-image: url('/images/live-agent-ref/bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 10px;
+  color: #000;
+}
+
+.inner {
+  max-width: 1340px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  width: min(67%, 900px);
+  text-align: center;
+  font-family: var(--font-ish-poppins), 'Poppins', sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 54px;
+  color: #000;
+  margin: 0 auto 8px;
+}
+
+.headingAccent {
+  color: var(--ish-purple);
+}
+
+.accentBar {
+  display: block;
+  width: min(120px, 18%);
+  height: auto;
+  margin: 0 auto 28px;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+  align-items: stretch;
+}
+
+.card {
+  width: min(40%, 480px);
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 14px;
+  padding: 24px 16px 28px;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.cardHuman {
+  background-image: url('/images/live-agent-ref/box-1.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.28);
+  position: relative;
+  overflow: hidden;
+}
+
+.cardHuman::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 35%;
+  background-image: url('/images/live-agent-ref/box-frame.png');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.cardAuto {
+  background-color: #fff;
+  border: 2px solid var(--ish-purple-border);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+}
+
+.cardIcon {
+  width: 45%;
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.cardAuto .cardIcon {
+  width: 38%;
+  max-width: 140px;
+}
+
+.cardTitle {
+  position: relative;
+  z-index: 1;
+  width: 80%;
+  text-align: center;
+  font-family: var(--font-ish-poppins), 'Poppins', sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 40px;
+  margin: 0 0 8px;
+}
+
+.cardHuman .cardTitle {
+  color: #fff;
+}
+
+.cardAuto .cardTitle {
+  color: #000;
+}
+
+.divider {
+  position: relative;
+  z-index: 1;
+  width: 14%;
+  min-width: 48px;
+  height: 2.5px;
+  background: var(--ish-purple-bright);
+  border: 0;
+  margin: 4px auto 20px;
+}
+
+.phoneBtn {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: min(51%, 260px);
+  margin-top: 8px;
+  padding: 12px 10px;
+  background: #fff;
+  border: 2px solid var(--ish-purple);
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.phoneIcon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  color: var(--ish-phone);
+}
+
+.phoneNumber {
+  font-family: var(--font-ish-montserrat), 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--ish-purple);
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.brandLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 28px;
+  text-decoration: none;
+}
+
+.brandLogoImg {
+  width: min(120px, 15vw);
+  height: auto;
+  border-radius: 999px;
+}
+
+.brandLogoText {
+  font-family: var(--font-ish-poppins), 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ish-purple-deep);
+}
+
+@media (max-width: 767px) {
+  .page {
+    padding: 8px 10px 18px;
+  }
+
+  .heading {
+    width: 97%;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 15px 0 10px;
+  }
+
+  .accentBar {
+    margin-bottom: 16px;
+  }
+
+  .cards {
+    gap: 15px;
+  }
+
+  .card {
+    width: 100%;
+    min-height: 46vh;
+    padding: 15px;
+  }
+
+  .cardHuman {
+    margin-bottom: 0;
+  }
+
+  .cardIcon {
+    width: 35%;
+  }
+
+  .cardAuto .cardIcon {
+    width: 30%;
+  }
+
+  .cardTitle {
+    width: 70%;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .divider {
+    width: 15%;
+  }
+
+  .phoneBtn {
+    width: 58%;
+    gap: 7px;
+    padding: 8px;
+  }
+
+  .phoneIcon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .phoneNumber {
+    font-size: 14px;
+  }
+
+  .brandLogo {
+    margin-top: 18px;
+  }
+
+  .brandLogoImg {
+    width: 44%;
+    max-width: 160px;
+  }
+}
