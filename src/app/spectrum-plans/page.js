@@ -60,6 +60,7 @@ export default function SpectrumPage() {
         },
       ]}
       faqs={providerFaqs('Spectrum')}
+      mobileSupportModal
     />
   );
 }

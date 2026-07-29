@@ -74,6 +74,7 @@ export default function XfinityPage() {
       contentSections={providerContentSections('Xfinity')}
       faqs={providerFaqs('Xfinity')}
       showTopCtas
+      mobileSupportModal
       liveAgentHref="/independent-support-help"
       relatedHelp={{
         title: 'Need Xfinity/Comcast support help?',
