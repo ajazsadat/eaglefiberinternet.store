@@ -4,6 +4,7 @@ import { SITE } from '@/lib/site';
 import ProviderFaq from '@/components/ProviderFaq';
 import ProviderComparisonTable from '@/components/ProviderComparisonTable';
 import ProviderWhyChoose from '@/components/ProviderWhyChoose';
+import MobileIndependentSupportModal from '@/components/MobileIndependentSupportModal';
 
 export default function ProviderPage({
   name,
@@ -22,11 +23,13 @@ export default function ProviderPage({
   relatedHelp,
   showTopCtas = false,
   liveAgentHref = '/live-agent',
+  mobileSupportModal = false,
 }) {
   const displayName = brandMark || name;
 
   return (
     <div className="flex flex-col min-h-screen bg-[#071018]">
+      {mobileSupportModal && <MobileIndependentSupportModal />}
       <section className="relative h-[42vh] md:h-[50vh] min-h-[380px] flex items-end overflow-hidden border-b border-white/10">
         <Image src={image} alt={`${name} internet`} fill className="object-cover opacity-45" priority />
         <div className="absolute inset-0 bg-gradient-to-t from-[#071018] via-[#071018]/50 to-transparent" />
