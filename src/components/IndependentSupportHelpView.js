@@ -19,7 +19,7 @@ function PhoneIcon() {
 }
 
 /**
- * Shared Independent Support Help UI used by /independent-support-help
+ * Shared Independent Support Help UI used by /compare-internet-options
  * and the mobile fullscreen modal on selected provider pages.
  */
 export default function IndependentSupportHelpView({ fullscreen = false }) {

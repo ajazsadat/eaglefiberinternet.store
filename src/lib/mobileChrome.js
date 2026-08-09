@@ -1,7 +1,7 @@
 /** Routes that hide the site header and footer entirely. */
 export const CHROME_HIDDEN_PATHS = [
   '/live-agent',
-  '/independent-support-help',
+  '/compare-internet-options',
 ];
 
 export function hidesChrome(pathname) {

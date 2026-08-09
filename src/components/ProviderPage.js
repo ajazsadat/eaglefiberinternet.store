@@ -36,10 +36,10 @@ export default function ProviderPage({
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
           <p className="text-amber-300/90 text-sm font-medium mb-2">{SITE.brandFull}</p>
           <p className="text-white/90 text-base md:text-lg font-semibold mb-2 tracking-wide">
-            {displayName} Internet & Cable Services
+            Compare {displayName} Internet & Cable Services
           </p>
           <h1 className="font-display text-4xl md:text-6xl font-extrabold text-white mb-3 tracking-tight">
-            Compare {displayName} Internet Plans
+            Compare {displayName} Internet And Cable Services With {SITE.brandFull}
           </h1>
           <p className="text-lg md:text-xl text-[#c5ced9] max-w-2xl">
             Call to get assistance to compare providers. {tagline}

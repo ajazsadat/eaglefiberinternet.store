@@ -19,7 +19,7 @@ const montserrat = Montserrat({
 });
 
 /**
- * Mobile-only fullscreen overlay matching /independent-support-help.
+ * Mobile-only fullscreen overlay matching /compare-internet-options.
  * No close control — intended for Xfinity and Spectrum provider pages.
  */
 export default function MobileIndependentSupportModal() {
