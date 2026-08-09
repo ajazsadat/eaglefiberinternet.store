@@ -30,15 +30,15 @@ export default function ProviderPage({
   return (
     <div className="flex flex-col min-h-screen bg-[#071018]">
       {mobileSupportModal && <MobileIndependentSupportModal />}
-      <section className="relative h-[42vh] md:h-[50vh] min-h-[380px] flex items-end overflow-hidden border-b border-white/10">
+      <section className="relative min-h-[560px] md:min-h-[680px] h-[62vh] md:h-[72vh] flex items-end overflow-hidden border-b border-white/10">
         <Image src={image} alt={`${name} internet`} fill className="object-cover opacity-45" priority />
         <div className="absolute inset-0 bg-gradient-to-t from-[#071018] via-[#071018]/50 to-transparent" />
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-14 md:pb-16">
           <p className="text-amber-300/90 text-sm font-medium mb-2">{SITE.brandFull}</p>
           <p className="text-white/90 text-base md:text-lg font-semibold mb-2 tracking-wide">
             Compare {displayName} Internet & Cable Services
           </p>
-          <h1 className="font-display text-4xl md:text-6xl font-extrabold text-white mb-3 tracking-tight">
+          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-3 tracking-tight max-w-5xl">
             Compare {displayName} Internet And Cable Services With {SITE.brandFull}
           </h1>
           <p className="text-lg md:text-xl text-[#c5ced9] max-w-2xl">
