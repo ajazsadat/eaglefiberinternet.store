@@ -75,12 +75,12 @@ export default function XfinityPage() {
       faqs={providerFaqs('Xfinity')}
       showTopCtas
       mobileSupportModal
-      liveAgentHref="/independent-support-help"
+      liveAgentHref="/compare-internet-options"
       relatedHelp={{
         title: 'Need Xfinity/Comcast support help?',
         description:
           'Get independent support routing — or compare new plan options. Not affiliated with Xfinity or Comcast.',
-        href: '/independent-support-help',
+        href: '/compare-internet-options',
         cta: 'Visit Independent Support Help',
       }}
     />
