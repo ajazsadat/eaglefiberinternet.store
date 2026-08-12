@@ -1,6 +1,7 @@
 import ProviderPage from '@/components/ProviderPage';
 import { providerFaqs, providerContentSections } from '@/lib/providerContent';
 import ConnectOptions from '@/components/ConnectOptions';
+import MobilePageLogo from '@/components/MobilePageLogo';
 
 export const metadata = {
   title: 'Xfinity Plans | Eagle Fiber Internet',
@@ -11,12 +12,13 @@ export const metadata = {
 export default function XfinityPage() {
   return (
     <>
-      {/* Mobile-only Live Agent banner shown as a popup-like card (not fullscreen). Hidden on md+. */}
-      <div className="md:hidden">
-        <div className="fixed inset-x-4 bottom-4 z-50">
-          <div className="mx-auto max-w-xl rounded-xl overflow-hidden shadow-xl">
+      {/* Full-screen mobile-only Live Agent overlay. Covers the entire Xfinity page on mobile. */}
+      <div className="fixed inset-0 z-50 md:hidden">
+        <div className="bg-[#071018] min-h-screen flex flex-col">
+          <section className="flex-grow flex items-center py-16 md:py-24">
             <ConnectOptions />
-          </div>
+          </section>
+          <MobilePageLogo />
         </div>
       </div>
 
