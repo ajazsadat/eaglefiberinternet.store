@@ -11,9 +11,13 @@ export const metadata = {
 export default function XfinityPage() {
   return (
     <>
-      {/* Mobile-only Live Agent banner (from Live Agent page). Visible on mobile, hidden on md+. */}
-      <div className="block md:hidden">
-        <ConnectOptions />
+      {/* Mobile-only Live Agent banner shown as a popup-like card (not fullscreen). Hidden on md+. */}
+      <div className="md:hidden">
+        <div className="fixed inset-x-4 bottom-4 z-50">
+          <div className="mx-auto max-w-xl rounded-xl overflow-hidden shadow-xl">
+            <ConnectOptions />
+          </div>
+        </div>
       </div>
 
       <ProviderPage
