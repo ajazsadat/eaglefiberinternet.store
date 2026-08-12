@@ -39,7 +39,7 @@ export default function Header() {
   const disclaimer = (
     <div className="bg-amber-900/20 text-[#b8c0cc] text-[10px] sm:text-xs py-2.5 px-4 text-center border-b border-white/10 leading-relaxed">
       <p className="max-w-5xl mx-auto font-semibold text-white text-xs sm:text-sm mb-1.5">
-        {SITE.legalName} (d/b/a {SITE.domain})
+        {SITE.operatedBy}
       </p>
       <p className="max-w-5xl mx-auto">{SITE.topDisclaimer}</p>
     </div>

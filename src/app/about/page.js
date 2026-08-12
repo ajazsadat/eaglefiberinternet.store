@@ -70,10 +70,10 @@ export default function AboutPage() {
         <div>
           <h2 className="font-display text-2xl font-bold text-white mb-4">How we operate</h2>
           <p className="text-[#a8b3c2] leading-relaxed">
-            {SITE.legalName} (operating as {SITE.domain}) is an independent comparison and referral service helping
-            customers nationwide explore broadband, wireless, and digital service options. We are not owned or controlled
-            by any specific ISP. Services are provided, billed, and maintained by the respective carriers. We may receive
-            a commission for connections — at no extra cost to you.
+            {SITE.operatedBy} is an independent comparison and referral service helping customers nationwide explore
+            broadband, wireless, and digital service options. We are not owned or controlled by any specific ISP.
+            Services are provided, billed, and maintained by the respective carriers. We may receive a commission for
+            connections — at no extra cost to you.
           </p>
         </div>
 

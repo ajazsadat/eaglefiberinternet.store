@@ -12,7 +12,7 @@ export default function TermsPage() {
         <h1 className="font-display text-4xl font-extrabold text-white mb-8">Terms & Conditions</h1>
         <div className="space-y-6 text-[#a8b3c2] leading-relaxed text-[15px]">
           <p>
-            By using {SITE.domain}, you agree to these Terms & Conditions. Eagle Fiber internet is an{' '}
+            By using {SITE.domain}, you agree to these Terms & Conditions. {SITE.operatedBy} is an{' '}
             <strong className="text-white font-semibold">independent comparison platform</strong> that helps customers
             explore, compare, and connect with licensed telecommunications and technology service providers throughout
             the United States. We do not own, operate, or maintain any internet, cable, wireless, or communication
@@ -22,7 +22,7 @@ export default function TermsPage() {
 
           <h2 className="font-display text-xl font-bold text-white pt-4">Not a service provider</h2>
           <p>
-            Eagle Fiber internet is an{' '}
+            {SITE.operatedBy} is an{' '}
             <strong className="text-white font-semibold">independent comparison platform</strong> that helps customers
             explore, compare, and connect with licensed telecommunications and technology service providers throughout
             the United States. {SITE.legalName} does not own, operate, install, or directly provide telecommunications,
