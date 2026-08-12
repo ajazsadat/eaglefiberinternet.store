@@ -12,8 +12,8 @@ export default function PrivacyPage() {
         <h1 className="font-display text-4xl font-extrabold text-white mb-8">Privacy Policy</h1>
         <div className="space-y-6 text-[#a8b3c2] leading-relaxed text-[15px]">
           <p>
-            This Privacy Policy describes how {SITE.legalName} (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;),
-            operating {SITE.domain}, collects, uses, and shares information when you visit our website or contact us.
+            This Privacy Policy describes how {SITE.operatedBy} (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;)
+            collects, uses, and shares information when you visit our website or contact us.
           </p>
           <h2 className="font-display text-xl font-bold text-white pt-4">Information we collect</h2>
           <p>

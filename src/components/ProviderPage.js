@@ -80,6 +80,20 @@ export default function ProviderPage({
         </section>
       )}
 
+      {/* Independent resource disclaimer — matches reference provider pages */}
+      <section className="bg-amber-700/90 border-b border-amber-500/40">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <p className="text-white text-sm sm:text-base leading-relaxed text-center">
+            <span className="font-semibold">Why Choose {SITE.brandFull}?</span> We help you compare top internet and TV
+            plans from leading and trusted providers available in your area.{' '}
+            <span className="font-semibold">
+              {SITE.brandFull} is an independent resource. We do not sell or manage {displayName} accounts; all
+              information is for guidance only.
+            </span>
+          </p>
+        </div>
+      </section>
+
       {/* Intro — matches WP “Why Choose Eagle Fiber” */}
       <section className="border-b border-white/5 bg-[#0a1420]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid lg:grid-cols-2 gap-10 items-center">
@@ -90,6 +104,10 @@ export default function ProviderPage({
             <p className="text-[#a8b3c2] leading-relaxed">
               {introBody ||
                 `${SITE.brandFull} (${SITE.legalName}) operates as an independent comparison platform, assisting customers in reviewing and comparing internet plans from participating providers. Our goal is to simplify the decision-making process and help you find a plan you can sign up for directly with the provider.`}
+            </p>
+            <p className="mt-4 text-sm text-[#7a8796] leading-relaxed italic">
+              *{SITE.brandFull} is an independent resource. We do not sell or manage {displayName} accounts; all
+              information is for guidance only.
             </p>
           </div>
           <div>

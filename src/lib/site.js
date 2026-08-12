@@ -3,6 +3,8 @@ export const SITE = {
   brandFull: "Eagle Fiber Internet",
   legalName: "Eagle Fiber LLC",
   domain: "eaglefiberinternet.store",
+  /** Identity line used across Who We Are, offers, FAQs, and chrome (replaces d/b/a phrasing). */
+  operatedBy: "Eagle Fiber LLC (operated by eaglefiberinternet.store)",
   phoneDisplay: "(888) 908-7350",
   phoneTel: "(888) 908-7350",
   email: "info@eaglefiberinternet.store",

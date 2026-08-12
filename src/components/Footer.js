@@ -29,8 +29,8 @@ export default function Footer() {
               <span className="font-display text-2xl font-bold text-gradient">{SITE.brand}</span>
             </div>
             <p className="mt-4 text-sm text-[#9aa6b5] max-w-xs leading-relaxed">
-              {SITE.legalName} (d/b/a {SITE.domain}) is an independent comparison platform that helps you explore
-              Internet and TV plans from multiple trusted providers. We do not sell, install, or manage services.
+              {SITE.operatedBy} is an independent comparison platform that helps you explore Internet and TV plans from
+              multiple trusted providers. We do not sell, install, or manage services.
             </p>
           </div>
 
@@ -44,6 +44,9 @@ export default function Footer() {
                 ['Contact Us', '/contact'],
                 ['Privacy Policy', '/privacy-policy'],
                 ['Terms & Conditions', '/terms-conditions'],
+                ['Reseller Disclosure', '/reseller-disclosure'],
+                ['Cookie Policy', '/cookie-policy'],
+                ['Fees & Disclosures', '/fees-disclosures'],
               ].map(([label, href]) => (
                 <li key={href}>
                   <Link href={href} className="text-sm text-[#9aa6b5] hover:text-amber-300 transition-colors">
