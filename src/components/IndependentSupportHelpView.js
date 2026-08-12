@@ -58,7 +58,7 @@ export default function IndependentSupportHelpView({ fullscreen = false }) {
             </span>
           </a>
 
-          <a href={`tel:${SITE.phoneTel}`} className={`${styles.card} ${styles.cardAuto}`}>
+          <Link href="/contact" className={`${styles.card} ${styles.cardAuto}`}>
             <Image
               src="/images/live-agent-ref/auto.png"
               alt=""
@@ -66,13 +66,13 @@ export default function IndependentSupportHelpView({ fullscreen = false }) {
               height={119}
               className={styles.cardIcon}
             />
-            <h2 className={styles.cardTitle}>Automated Support Line</h2>
+            <h2 className={styles.cardTitle}>Send Us a Message</h2>
             <hr className={styles.divider} />
-            <span className={styles.phoneBtn}>
-              <PhoneIcon />
-              <span className={styles.phoneNumber}>{phoneDisplay}</span>
-            </span>
-          </a>
+            <p className={styles.cardBody}>
+              Prefer not to call? Fill out our contact form and we&apos;ll follow up.
+            </p>
+            <span className={styles.ctaBtn}>Go to Contact Form</span>
+          </Link>
         </div>
 
         <Link href="/" className={styles.brandLogo}>
