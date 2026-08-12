@@ -1,6 +1,6 @@
 import ProviderPage from '@/components/ProviderPage';
 import { providerFaqs, providerContentSections } from '@/lib/providerContent';
-import XfinityMobileCallPopup from '@/components/XfinityMobileCallPopup';
+import ConnectOptions from '@/components/ConnectOptions';
 
 export const metadata = {
   title: 'Xfinity Plans | Eagle Fiber Internet',
@@ -11,6 +11,11 @@ export const metadata = {
 export default function XfinityPage() {
   return (
     <>
+      {/* Mobile-only Live Agent banner (from Live Agent page). Visible on mobile, hidden on md+. */}
+      <div className="block md:hidden">
+        <ConnectOptions />
+      </div>
+
       <ProviderPage
         name="Xfinity"
         brandMark="Xfinity®"
@@ -86,7 +91,6 @@ export default function XfinityPage() {
           cta: 'Visit Independent Support Help',
         }}
       />
-      <XfinityMobileCallPopup />
     </>
   );
 }
