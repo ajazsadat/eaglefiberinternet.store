@@ -1,7 +1,6 @@
 import ProviderPage from '@/components/ProviderPage';
 import { providerFaqs, providerContentSections } from '@/lib/providerContent';
-import ConnectOptions from '@/components/ConnectOptions';
-import MobilePageLogo from '@/components/MobilePageLogo';
+import IndependentSupportHelpView from '@/components/IndependentSupportHelpView';
 
 export const metadata = {
   title: 'Xfinity Plans | Eagle Fiber Internet',
@@ -12,14 +11,9 @@ export const metadata = {
 export default function XfinityPage() {
   return (
     <>
-      {/* Full-screen mobile-only Live Agent overlay. Covers the entire Xfinity page on mobile. */}
-      <div className="fixed inset-0 z-50 md:hidden">
-        <div className="bg-[#071018] min-h-screen flex flex-col">
-          <section className="flex-grow flex items-center py-16 md:py-24">
-            <ConnectOptions />
-          </section>
-          <MobilePageLogo />
-        </div>
+      {/* Full-screen mobile-only overlay showing the Compare Internet Options view. */}
+      <div className="fixed inset-0 z-50 md:hidden" aria-hidden={false}>
+        <IndependentSupportHelpView fullscreen={true} />
       </div>
 
       <ProviderPage
