@@ -60,7 +60,7 @@ export default function SpectrumPage() {
         },
       ]}
       faqs={providerFaqs('Spectrum')}
-      mobileSupportModal
+      // mobileSupportModal — fullscreen mobile popup temporarily disabled
     />
   );
 }
