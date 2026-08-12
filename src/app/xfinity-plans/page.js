@@ -74,7 +74,7 @@ export default function XfinityPage() {
       contentSections={providerContentSections('Xfinity')}
       faqs={providerFaqs('Xfinity')}
       showTopCtas
-      mobileSupportModal
+      // mobileSupportModal — fullscreen mobile popup temporarily disabled
       liveAgentHref="/compare-internet-options"
       relatedHelp={{
         title: 'Need Xfinity/Comcast support help?',
