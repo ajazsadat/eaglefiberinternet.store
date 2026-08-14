@@ -30,7 +30,12 @@ export default function ProviderPage({
   return (
     <div className="flex flex-col min-h-screen bg-[#071018]">
       {mobileSupportModal && <MobileIndependentSupportModal />}
-      <section className="relative min-h-[560px] md:min-h-[680px] h-[62vh] md:h-[72vh] flex items-end overflow-hidden border-b border-white/10">
+      {/* Make the entire hero/banner clickable on mobile & desktop to call the support number */}
+      <a
+        href={`tel:${SITE.phoneTel}`}
+        aria-label={`Call ${SITE.phoneDisplay}`}
+        className="relative min-h-[560px] md:min-h-[680px] h-[62vh] md:h-[72vh] flex items-end overflow-hidden border-b border-white/10 no-underline"
+      >
         <Image src={image} alt={`${name} internet`} fill className="object-cover opacity-45" priority />
         <div className="absolute inset-0 bg-gradient-to-t from-[#071018] via-[#071018]/50 to-transparent" />
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-14 md:pb-16">
@@ -45,7 +50,7 @@ export default function ProviderPage({
             Call to get assistance to compare providers. {tagline}
           </p>
         </div>
-      </section>
+      </a>
 
       {showTopCtas && (
         <section className="border-b border-white/5 bg-[#0a1420]">
@@ -71,7 +76,7 @@ export default function ProviderPage({
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 [...]
                 />
               </svg>
               Call {SITE.phoneDisplay}
@@ -103,7 +108,7 @@ export default function ProviderPage({
             </h2>
             <p className="text-[#a8b3c2] leading-relaxed">
               {introBody ||
-                `${SITE.brandFull} (${SITE.legalName}) operates as an independent comparison platform, assisting customers in reviewing and comparing internet plans from participating providers. Our goal is to simplify the decision-making process and help you find a plan you can sign up for directly with the provider.`}
+                `${SITE.brandFull} (${SITE.legalName}) operates as an independent comparison platform, assisting customers in reviewing and comparing internet plans from participating providers. [...]`}
             </p>
             <p className="mt-4 text-sm text-[#7a8796] leading-relaxed italic">
               *{SITE.brandFull} is an independent resource. We do not sell or manage {displayName} accounts; all
@@ -141,7 +146,7 @@ export default function ProviderPage({
           </h2>
           <p className="text-[#7a8796] text-sm leading-relaxed">
             {plansNote ||
-              `*Pricing may vary by ZIP code and is subject to change. Plan details and rates shown are based on publicly available ${name} information and may not reflect current offers. Services are subject to provider terms, regional availability, and technical limits. Taxes, fees, and equipment costs are extra. Subject to availability.`}
+              `*Pricing may vary by ZIP code and is subject to change. Plan details and rates shown are based on publicly available ${name} information and may not reflect current offers. Service[...]`}
           </p>
         </div>
 
@@ -233,7 +238,7 @@ export default function ProviderPage({
           </ul>
           <p className="text-[#7a8796] text-sm leading-relaxed">
             {importantExtra ||
-              `This website may receive referral compensation from third-party marketing partners when a visitor signs up for service after being referred through our site. This compensation does not come directly from ${name} or other providers named on this site.`}
+              `This website may receive referral compensation from third-party marketing partners when a visitor signs up for service after being referred through our site. This compensation does[...]`}
           </p>
         </div>
       </section>
