@@ -30,14 +30,29 @@ export default function ProviderPage({
   return (
     <div className="flex flex-col min-h-screen bg-[#071018]">
       {mobileSupportModal && <MobileIndependentSupportModal />}
-      {/* Make the entire hero/banner clickable on mobile & desktop to call the support number */}
+
+      {/* Entire hero/banner is a single large tel: anchor so clicking anywhere starts a call */}
       <a
         href={`tel:${SITE.phoneTel}`}
         aria-label={`Call ${SITE.phoneDisplay}`}
-        className="relative min-h-[560px] md:min-h-[680px] h-[62vh] md:h-[72vh] flex items-end overflow-hidden border-b border-white/10 no-underline"
+        className="provider-hero-call"
+        style={{ display: 'block', position: 'relative', width: '100%', minHeight: '62vh' }}
       >
-        <Image src={image} alt={`${name} internet`} fill className="object-cover opacity-45" priority />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#071018] via-[#071018]/50 to-transparent" />
+        {/* Background image should not capture pointer events so clicks reach the anchor */}
+        <Image
+          src={image}
+          alt={`${name} internet`}
+          fill
+          className="object-cover opacity-45"
+          priority
+          style={{ pointerEvents: 'none' }}
+        />
+
+        <div
+          className="absolute inset-0 bg-gradient-to-t from-[#071018] via-[#071018]/50 to-transparent"
+          style={{ pointerEvents: 'none' }}
+        />
+
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-14 md:pb-16">
           <p className="text-amber-300/90 text-sm font-medium mb-2">{SITE.brandFull}</p>
           <p className="text-white/90 text-base md:text-lg font-semibold mb-2 tracking-wide">
