@@ -29,7 +29,7 @@ export default function Header() {
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
-    { name: 'Live Agent', href: '/live-agent' },
+    { name: 'Contact Us To Compare', href: '/contact-us-to-compare' },
     { name: 'Contact', href: '/contact' },
   ];
 

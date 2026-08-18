@@ -60,6 +60,8 @@ export default function SpectrumPage() {
         },
       ]}
       faqs={providerFaqs('Spectrum')}
+      showTopCtas
+      liveAgentHref="/compare-internet-options"
       // mobileSupportModal — fullscreen mobile popup temporarily disabled
     />
   );

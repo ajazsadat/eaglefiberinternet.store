@@ -8,6 +8,7 @@ const nextConfig = {
       { source: '/compare/frontier-plans', destination: '/frontier-plans', permanent: true },
       { source: '/compare/windstream-plans', destination: '/windstream-plans', permanent: true },
       { source: '/independent-support-help', destination: '/compare-internet-options', permanent: true },
+      { source: '/live-agent', destination: '/contact-us-to-compare', permanent: true },
     ];
   },
 };
