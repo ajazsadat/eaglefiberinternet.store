@@ -61,6 +61,8 @@ export default function AttPage() {
         },
       ]}
       faqs={providerFaqs('AT&T')}
+      showTopCtas
+      liveAgentHref="/compare-internet-options"
     />
   );
 }

@@ -1,11 +1,11 @@
-import IndependentSupportHelpView from '@/components/IndependentSupportHelpView';
+import LiveAgentPage from '@/components/LiveAgentPage';
 
 export const metadata = {
   title: 'Compare Internet Options | Eagle Fiber Internet',
   description:
-    'Compare internet options with independent support-routing help. Speak with a human agent or send us a message. Not affiliated with any carrier.',
+    'Compare internet options with Eagle Fiber — call now and we\'ll walk you through your options, or send us a message. Not affiliated with any carrier.',
 };
 
-export default function IndependentSupportHelpPage() {
-  return <IndependentSupportHelpView />;
+export default function CompareInternetOptionsPage() {
+  return <LiveAgentPage />;
 }

@@ -61,8 +61,8 @@ export default function ConnectOptions() {
   return (
     <div className="w-full max-w-4xl mx-auto px-4 sm:px-6">
       <h1 className="font-display text-center text-xl sm:text-2xl md:text-3xl font-extrabold text-white tracking-tight leading-tight mb-10 md:mb-14">
-        How would you like to connect for{' '}
-        <span className="text-amber-300">Internet Services and Assistance?</span>
+        Call now and we&apos;ll{' '}
+        <span className="text-amber-300">walk you through your options.</span>
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-8">
@@ -71,9 +71,7 @@ export default function ConnectOptions() {
           className="group flex flex-col items-center justify-center gap-5 rounded-2xl border border-white/10 bg-[#121c2a] px-6 py-12 md:py-16 text-center hover:border-amber-400/50 hover:bg-[#152033] transition"
         >
           <HumanAgentIcon />
-          <span className="font-display text-xl md:text-2xl font-bold text-white">
-            Call to Compare Now
-          </span>
+
           <PhoneButton />
         </a>
 
