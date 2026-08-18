@@ -1,4 +1,4 @@
-import LiveAgentPage from '@/components/LiveAgentPage';
+import CompareOptionsView from '@/components/CompareOptionsView';
 
 export const metadata = {
   title: 'Compare Internet Options | Eagle Fiber Internet',
@@ -7,5 +7,5 @@ export const metadata = {
 };
 
 export default function CompareInternetOptionsPage() {
-  return <LiveAgentPage />;
+  return <CompareOptionsView />;
 }
