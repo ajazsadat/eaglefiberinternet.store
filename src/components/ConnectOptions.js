@@ -60,7 +60,7 @@ function PhoneButton() {
 export default function ConnectOptions() {
   return (
     <div className="w-full max-w-4xl mx-auto px-4 sm:px-6">
-      <h1 className="font-display text-center text-2xl sm:text-3xl md:text-5xl font-extrabold text-white tracking-tight leading-tight mb-10 md:mb-14">
+      <h1 className="font-display text-center text-xl sm:text-2xl md:text-3xl font-extrabold text-white tracking-tight leading-tight mb-10 md:mb-14">
         How would you like to connect for{' '}
         <span className="text-amber-300">Internet Services and Assistance?</span>
       </h1>
@@ -72,7 +72,7 @@ export default function ConnectOptions() {
         >
           <HumanAgentIcon />
           <span className="font-display text-xl md:text-2xl font-bold text-white">
-            Speak With A Human Agent
+            Call to Compare Now
           </span>
           <PhoneButton />
         </a>

@@ -1,6 +1,6 @@
 /** Routes that hide the site header and footer entirely. */
 export const CHROME_HIDDEN_PATHS = [
-  '/live-agent',
+  '/contact-us-to-compare',
   '/compare-internet-options',
 ];
 

@@ -40,7 +40,7 @@ export default function MobileIndependentSupportModal() {
 
   return (
     <div
-      className={`fixed inset-0 z-[100] md:hidden overflow-y-auto ${poppins.variable} ${montserrat.variable}`}
+      className={`fixed inset-0 z-[100] md:hidden overflow-y-auto overscroll-contain bg-[#e8e2f6] ${poppins.variable} ${montserrat.variable}`}
       role="dialog"
       aria-modal="true"
       aria-label="Internet services and assistance"

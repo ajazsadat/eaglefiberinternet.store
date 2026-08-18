@@ -50,7 +50,7 @@ export default function IndependentSupportHelpView({ fullscreen = false }) {
               height={216}
               className={styles.cardIcon}
             />
-            <h2 className={styles.cardTitle}>Speak With A Human Agent</h2>
+            <h2 className={styles.cardTitle}>Call to Compare Now</h2>
             <hr className={styles.divider} />
             <span className={styles.phoneBtn}>
               <PhoneIcon />
@@ -84,6 +84,10 @@ export default function IndependentSupportHelpView({ fullscreen = false }) {
             className={styles.brandLogoImg}
           />
         </Link>
+
+        <div className={styles.disclaimer}>
+          <p className={styles.disclaimerBody}>{SITE.topDisclaimer}</p>
+        </div>
       </div>
     </div>
   );
