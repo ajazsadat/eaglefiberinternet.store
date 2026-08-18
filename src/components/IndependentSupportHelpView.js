@@ -29,8 +29,8 @@ export default function IndependentSupportHelpView({ fullscreen = false }) {
     <div className={`${styles.page}${fullscreen ? ` ${styles.pageFullscreen}` : ''}`}>
       <div className={styles.inner}>
         <h1 className={styles.heading}>
-          How would you like to connect for{' '}
-          <span className={styles.headingAccent}>Internet Services and Assistance?</span>
+          Call now and we&apos;ll{' '}
+          <span className={styles.headingAccent}>walk you through your options.</span>
         </h1>
 
         <Image
@@ -50,7 +50,7 @@ export default function IndependentSupportHelpView({ fullscreen = false }) {
               height={216}
               className={styles.cardIcon}
             />
-            <h2 className={styles.cardTitle}>Call to Compare Now</h2>
+            {/* <h2 className={styles.cardTitle}>Call Now</h2> */}
             <hr className={styles.divider} />
             <span className={styles.phoneBtn}>
               <PhoneIcon />
