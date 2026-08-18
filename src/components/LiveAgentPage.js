@@ -2,7 +2,7 @@ import MobilePageLogo from '@/components/MobilePageLogo';
 import ConnectOptions from '@/components/ConnectOptions';
 import { SITE } from '@/lib/site';
 
-/** Shared minimal layout used by /contact-us-to-compare and /compare-internet-options. */
+/** Minimal layout used by /contact-us-to-compare. */
 export default function LiveAgentPage() {
   return (
     <div className="bg-[#071018] min-h-[70vh] flex flex-col">
