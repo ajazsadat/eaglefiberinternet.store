@@ -88,6 +88,7 @@ export default function Header() {
                 </Link>
               ))}
 
+              {/* Providers dropdown — disabled while the provider pages are commented out.
               <div className="relative" ref={dropdownRef}>
                 <button
                   onClick={() => setIsProvidersOpen(!isProvidersOpen)}
@@ -118,6 +119,7 @@ export default function Header() {
                   </div>
                 )}
               </div>
+              */}
 
               <a
                 href={`tel:${SITE.phoneTel}`}
@@ -162,6 +164,7 @@ export default function Header() {
                   {link.name}
                 </Link>
               ))}
+              {/* Providers list — disabled while the provider pages are commented out.
               <div className="px-3 pt-2 pb-1 text-xs uppercase tracking-wider text-gray-500">Providers</div>
               {PROVIDERS.map((link) => (
                 <Link
@@ -173,6 +176,7 @@ export default function Header() {
                   {link.name}
                 </Link>
               ))}
+              */}
               <a
                 href={`tel:${SITE.phoneTel}`}
                 className="mt-3 block w-full text-center px-4 py-3 rounded-full font-semibold text-[#071018] bg-gradient-to-r from-[#f0c27a] to-[#e8a84a]"

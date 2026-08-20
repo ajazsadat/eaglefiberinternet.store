@@ -19,12 +19,13 @@ export const SITE = {
   ],
 };
 
+/** Provider pages are disabled for now — see src/app/*-plans/page.js.disabled */
 export const PROVIDERS = [
-  { name: "Xfinity", href: "/xfinity-plans" },
-  { name: "AT&T Fiber", href: "/att-plans" },
-  { name: "Spectrum", href: "/spectrum-plans" },
-  { name: "Frontier", href: "/frontier-plans" },
-  { name: "Windstream", href: "/windstream-plans" },
+  // { name: "Xfinity", href: "/xfinity-plans" },
+  // { name: "AT&T Fiber", href: "/att-plans" },
+  // { name: "Spectrum", href: "/spectrum-plans" },
+  // { name: "Frontier", href: "/frontier-plans" },
+  // { name: "Windstream", href: "/windstream-plans" },
 ];
 
 export const PROVIDER_NAMES_LIST =
